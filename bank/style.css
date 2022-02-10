@@ -1,0 +1,50 @@
+main{
+    background: #2ec794 !important;
+    height: 100vh;
+}
+.custom-bg{
+    background-color: #2ec794;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.2),
+                5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.custom-bg h1{
+    color: rgba(0, 0, 0, 0.7);
+}
+.custom-bg h1 span{
+    color: rgba(255, 255, 255, 0.699);
+}
+.login-button{
+    background-color: #2ec794;
+    color: #fff;
+    border: none;
+    padding: 8px 17px;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.2),
+                5px 5px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    font-weight: 500;
+}
+.login-button:focus{
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.2),
+                5px 5px 5px rgba(0, 0, 0, 0.1),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+                inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+#withraw-balance{
+    padding:8px 25px ;
+}
+input{
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+                15px 15px 15px rgba(0, 0, 0, 0.1),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+                inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+    background-color: #2ec794;
+    color: #fff !important;
+    font-weight: 500 !important;
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.623) !important;
+    font-weight: 500;
+}
+input:focus{
+    outline: none;
+}

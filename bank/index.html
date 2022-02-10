@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="bank.css">
+    <title>Account Info</title>
+</head>
+<body>
+    <main>
+        <div class="grid grid-cols-3 gap-10 w-10/12 mx-auto py-10">
+            <div class="custom-bg flex flex-col h-52 rounded-lg">
+                <div class="inner-text mx-auto mt-4">
+                    <h1 class="text-5xl mt-4 font-semibold">Deposit</h1>
+                    <h1 class="mt-4 text-4xl font-semibold"><span>$</span><span id="deposit-amount">00</span></h1>
+                </div>
+            </div>
+            <div class="custom-bg flex flex-col h-52 rounded-lg">
+                <div class="inner-text mx-auto mt-4">
+                    <h1 class="text-5xl mt-4 font-semibold">Withdrawn</h1>
+                    <h1 class="mt-4 text-4xl font-semibold"><span>$</span><span id="withdraw-amount">00</span></h1>
+                </div>
+            </div>
+            <div class="custom-bg flex flex-col h-52 rounded-lg">
+                <div class="inner-text mx-auto mt-4">
+                    <h1 class="text-5xl mt-4 font-semibold">Balance</h1>
+                    <h1 class="mt-4 text-4xl font-semibold"><span>$</span><span id="balance-amount">1000</span></h1>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-10 mx-auto w-10/12">
+            <div>
+                <input id="input-amount" class="mb-5 px-3 py-2 rounded mr-1" type="number" placeholder="Enter Your Amount">
+                <button class="login-button" id="add-balance">Add Balance</button>
+            </div>
+            <div class="ml-auto">
+                <input class="mb-5 px-3 py-2 rounded mr-1" type="number" placeholder="Enter Your Amount" id="add-withdraw">
+                <button class="login-button" id="withraw-balance">Withdraw</button>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./bank.js"></script>
+</body>
+</html>
