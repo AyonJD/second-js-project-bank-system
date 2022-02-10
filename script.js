@@ -5,6 +5,6 @@ document.getElementById('login-button').addEventListener('click', function () {
 
     //Redirect the login page to bank page using this mail and pass
     if (loginMail.value === 'admin' && loginPassword.value === 'admin') {
-    window.location.href = 'bank/index.html'
+        window.location.href = 'bank/index.html'
     };
 });
