@@ -35,7 +35,8 @@ function getInputValue(inputId) {
   //For Add Balance button
   document.getElementById("add-balance").addEventListener("click", function () {
     const depositAmount = getInputValue("input-amount");
-    if (depositAmount <= 0) {
+    console.log(depositAmount);
+    if (depositAmount <= 0 || isNaN(depositAmount) == true) {
       alert("Please enter a valid amount");
     } else {
       totalCash("deposit-amount", depositAmount);
@@ -48,11 +49,11 @@ function getInputValue(inputId) {
     .getElementById("withraw-balance")
     .addEventListener("click", function () {
       const withdrawAmount = getInputValue("add-withdraw");
-      if (withdrawAmount <= 0) {
+      if (withdrawAmount <= 0 || isNaN(withdrawAmount) == true) {
         alert("Please enter a valid amount");
       } else {
         totalCash("withdraw-amount", withdrawAmount);
         totalBalance(withdrawAmount, false);
       }
     });
-  
+    
